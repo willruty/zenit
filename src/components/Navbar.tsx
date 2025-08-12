@@ -18,7 +18,6 @@ const Navbar = () => {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-    // Prevent background scrolling when menu is open
     document.body.style.overflow = !isMenuOpen ? 'hidden' : '';
   };
 
@@ -35,20 +34,13 @@ const Navbar = () => {
     }
   };
 
-  const closeMenu = () => {
-    setIsMenuOpen(false);
-    document.body.style.overflow = '';
-  };
-
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 py-2 sm:py-3 md:py-4 transition-all duration-300",
-        isMenuOpen
-          ? "bg-white/80 backdrop-blur-md shadow-sm"
-          : isScrolled
-            ? "bg-white/80 backdrop-blur-md shadow-sm"
-            : "bg-transparent"
+        "fixed top-0 left-0 right-0 z-50 py-2 sm:py-3 md:py-4 transition-all duration-300 w-full h-full",
+        isMenuOpen && "bg-white/50 backdrop-blur-md shadow-sm md:bg-white/80 w-full",
+        !isMenuOpen && !isScrolled && "bg-transparent h-16",
+        !isMenuOpen && isScrolled && "bg-white/50 backdrop-blur-md shadow-sm h-16"
       )}
     >
       <div className="container flex items-center justify-between px-4 sm:px-6 lg:px-8">
@@ -59,12 +51,12 @@ const Navbar = () => {
             e.preventDefault();
             scrollToTop();
           }}
-          aria-label="Pulse Robot"
+          aria-label="Zenit"
         >
           <img
-            src="/logo.svg"
+            src="/white_bg.png"
             alt="Pulse Robot Logo"
-            className="h-7 sm:h-8"
+            className="h-10 sm:h-5 lg:h-20"
           />
         </a>
 
@@ -97,12 +89,10 @@ const Navbar = () => {
 
       {/* Mobile Navigation - improved for better touch experience */}
       <div className={cn(
-        "fixed inset-0 z-40 bg-white flex flex-col pt-16 px-6 md:hidden transition-all duration-300 ease-in-out",
-        isMenuOpen
-          ? "opacity-100 translate-x-0 pointer-events-auto"
-          : "opacity-0 translate-x-full pointer-events-none"
-      )}>
-        <nav className="flex flex-col space-y-8 items-center mt-8">
+        "fixed inset-0 z-40 flex flex-col pt-16 px-6 bg-white md:hidden transition-transform duration-300 ease-in-out",
+        isMenuOpen ? "translate-x-0 shadow-sm" : "translate-x-full opacity-0"
+        )}>
+        <nav className="flex flex-col space-y-8 items-center mt-8 w-full bg-white">
           <a
             href="#"
             className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-100"

@@ -45,6 +45,7 @@ const DetailsSection = () => {
       company: ""
     });
   };
+
   return <section id="details" className="w-full bg-white py-0">
     <div className="container px-4 sm:px-6 lg:px-8 mx-auto">
       <div className="grid grid-cols-1 gap-6 md:gap-8 lg:grid-cols-2">
@@ -206,11 +207,11 @@ const DetailsSection = () => {
             </form>
           </div>
 
-          <div className="flex justify-center gap-6 mt-4 text-center">
-            <p className="font-display font-normal text-black">
+          <div className="flex flex-col sm:flex-row justify-center sm:justify-start gap-4 sm:gap-6 mt-4 text-center sm:text-center md:text-center">
+            <p className="font-display font-normal text-black text-sm sm:text-base mb-0 sm:mb-0 md:mb-10">
               Email: <span className="text-[#FC4D0A] font-normal">willrm.mkt@gmail.com</span>
             </p>
-            <p className="font-display font-normal text-black">
+            <p className="font-display font-normal text-black text-sm sm:text-base mb-4 sm:mb-0 md:mb-3">
               Telefone: <span className="text-[#FC4D0A] font-normal">(41) 98441-8576</span>
             </p>
           </div>
