@@ -18,7 +18,7 @@ const ImageShowcaseSection = () => {
         <div className="rounded-2xl sm:rounded-3xl overflow-hidden shadow-elegant mx-auto max-w-4xl animate-on-scroll">
           <div className="w-full">
             <img
-              src="/lovable-uploads/c3d5522b-6886-4b75-8ffc-d020016bb9c2.png"
+              src={`${import.meta.env.BASE_URL}lovable-uploads/c3d5522b-6886-4b75-8ffc-d020016bb9c2.png`}
               alt="Advanced humanoid robot with orange and white design"
               className="w-full h-auto object-cover"
             />
@@ -26,7 +26,7 @@ const ImageShowcaseSection = () => {
           <div className="bg-white p-4 sm:p-8">
             <h3 className="text-xl sm:text-2xl font-display font-semibold mb-3 sm:mb-4">Soluções Digitais de Nova Geração</h3>
             <p className="text-gray-700 text-sm sm:text-base">
-              Desenvolvemos sites com precisão, usando IA avançada para garantir performance, 
+              Desenvolvemos sites com precisão, usando IA avançada para garantir performance,
               usabilidade e suporte contínuo, integrando tecnologia e criatividade para impulsionar seu negócio.
             </p>
           </div>

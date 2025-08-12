@@ -8,11 +8,11 @@ const MadeByHumans = () => {
         <div className="w-full rounded-2xl sm:rounded-3xl overflow-hidden relative mt-6 sm:mt-8">
           <div
             className="bg-no-repeat bg-cover bg-center p-4 sm:p-5 min-h-[250px] sm:min-h-[350px] flex flex-col justify-between"
-            style={{ backgroundImage: "url('/background-section3.png')" }}
+            style={{ backgroundImage: `url('${import.meta.env.BASE_URL}background-section3.png')` }}
           >
             <div className="flex flex-col sm:flex-row items-center sm:items-center justify-center sm:justify-start text-white">
               <img
-                src="/no_bg.png"
+                src={`${import.meta.env.BASE_URL}no_bg.png`}
                 alt="Pulse Robot Logo"
                 className="h-12 w-auto mb-4 sm:mb-0 sm:h-6 md:h-20 mr-0 sm:mr-3 mx-auto sm:mx-0"
               />

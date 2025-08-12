@@ -39,8 +39,8 @@ const Navbar = () => {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 py-2 sm:py-3 md:py-4 transition-all duration-300 w-full h-full",
         isMenuOpen && "bg-white/50 backdrop-blur-md shadow-sm md:bg-white/80 w-full",
-        !isMenuOpen && !isScrolled && "bg-transparent h-16",
-        !isMenuOpen && isScrolled && "bg-white/50 backdrop-blur-md shadow-sm h-16"
+        !isMenuOpen && !isScrolled && "bg-transparent h-16 md:h-16",
+        !isMenuOpen && isScrolled && "bg-white/50 backdrop-blur-md shadow-sm h-16 sm:h-16 md:h-24"
       )}
     >
       <div className="container flex items-center justify-between px-4 sm:px-6 lg:px-8">
@@ -54,7 +54,7 @@ const Navbar = () => {
           aria-label="Zenit"
         >
           <img
-            src="/white_bg.png"
+            src={`${import.meta.env.BASE_URL}white_bg.png`}
             alt="Pulse Robot Logo"
             className="h-10 sm:h-5 lg:h-20"
           />
@@ -91,7 +91,7 @@ const Navbar = () => {
       <div className={cn(
         "fixed inset-0 z-40 flex flex-col pt-16 px-6 bg-white md:hidden transition-transform duration-300 ease-in-out",
         isMenuOpen ? "translate-x-0 shadow-sm" : "translate-x-full opacity-0"
-        )}>
+      )}>
         <nav className="flex flex-col space-y-8 items-center mt-8 w-full bg-white">
           <a
             href="#"

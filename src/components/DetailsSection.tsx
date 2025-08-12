@@ -52,7 +52,7 @@ const DetailsSection = () => {
         {/* Left Card - The Details */}
         <div className="rounded-2xl sm:rounded-3xl overflow-hidden shadow-elegant">
           <div className="relative h-48 sm:h-64 p-6 sm:p-8 flex items-end" style={{
-            backgroundImage: "url('/background-section3.png')",
+            backgroundImage: `url('${import.meta.env.BASE_URL}background-section3.png')`,
             backgroundSize: "cover",
             backgroundPosition: "center"
           }}>
@@ -143,7 +143,7 @@ const DetailsSection = () => {
         <div className="rounded-2xl sm:rounded-3xl overflow-hidden shadow-elegant">
           {/* Card Header with background image instead of gradient */}
           <div className="relative h-48 sm:h-64 p-6 sm:p-8 flex flex-col items-start" style={{
-            backgroundImage: "url('/background-section1.png')",
+            backgroundImage: `url('${import.meta.env.BASE_URL}background-section1.png')`,
             backgroundSize: "cover",
             backgroundPosition: "center"
           }}>
@@ -207,11 +207,13 @@ const DetailsSection = () => {
             </form>
           </div>
 
-          <div className="flex flex-col sm:flex-row justify-center sm:justify-start gap-4 sm:gap-6 mt-4 text-center sm:text-center md:text-center">
-            <p className="font-display font-normal text-black text-sm sm:text-base mb-0 sm:mb-0 md:mb-10">
+          <div
+            className="flex flex-col sm:flex-row justify-center md:justify-center gap-4 sm:gap-6 mt-4 text-center md:text-center md:flex-row md:items-center"
+          >
+            <p className="font-display font-normal text-black text-sm sm:text-base mb-2 md:mb-0 md:mr-6">
               Email: <span className="text-[#FC4D0A] font-normal">willrm.mkt@gmail.com</span>
             </p>
-            <p className="font-display font-normal text-black text-sm sm:text-base mb-4 sm:mb-0 md:mb-3">
+            <p className="font-display font-normal text-black text-sm sm:text-base mb-2 md:mb-0">
               Telefone: <span className="text-[#FC4D0A] font-normal">(41) 98441-8576</span>
             </p>
           </div>
