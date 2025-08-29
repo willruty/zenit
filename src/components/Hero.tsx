@@ -1,8 +1,6 @@
 
 import React, { useEffect, useRef, useState } from "react";
-import { cn } from "@/lib/utils";
 import { ArrowRight } from "lucide-react";
-import LottieAnimation from "./LottieAnimation";
 
 const Hero = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -106,21 +104,21 @@ const Hero = () => {
               style={{ animationDelay: "0.1s" }}
             >
               <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-pulse-500 text-white mr-2">01</span>
-              <span>Transformando ideias em presença digital</span>
+              <span>Transforming digital presence</span>
             </div>
 
             <h1
               className="section-title text-3xl sm:text-4xl lg:text-5xl xl:text-6xl leading-tight opacity-0 animate-fade-in"
               style={{ animationDelay: "0.3s" }}
             >
-              Zenit: Do zero ao site<br className="hidden sm:inline" />  pronto em poucos dias
+              Zenit: From Zero to top<br className="hidden sm:inline" /> ready in a few days
             </h1>
 
             <p
               style={{ animationDelay: "0.5s" }}
               className="section-subtitle mt-3 sm:mt-6 mb-4 sm:mb-8 leading-relaxed opacity-0 animate-fade-in text-gray-950 font-normal text-base sm:text-lg text-left"
             >
-              A Zenit cria sites modernos, responsivos e otimizados para atrair clientes e gerar vendas, tudo com design profissional e velocidade.
+              Zenit builds modern, responsive, and optimized websites to attract customers and drive sales, all with professional design and speed.
             </p>
 
             <div
@@ -142,7 +140,7 @@ const Hero = () => {
                   border: '1px solid white',
                 }}
               >
-                Quero meu site agora
+                Get your website now!
                 <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
               </a>
             </div>
@@ -151,12 +149,7 @@ const Hero = () => {
           <div className="w-full lg:w-1/2 relative mt-6 lg:mt-0">
             {lottieData ? (
               <div className="relative z-10 animate-fade-in" style={{ animationDelay: "0.9s" }}>
-                <LottieAnimation
-                  animationPath={lottieData}
-                  className="w-full h-auto max-w-lg mx-auto"
-                  loop={true}
-                  autoplay={true}
-                />
+               
               </div>
             ) : (
               <>

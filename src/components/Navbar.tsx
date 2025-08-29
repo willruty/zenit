@@ -40,7 +40,7 @@ const Navbar = () => {
         "fixed top-0 left-0 right-0 z-50 py-2 sm:py-3 md:py-4 transition-all duration-300 w-full h-full",
         isMenuOpen && "bg-white/50 backdrop-blur-md shadow-sm md:bg-white/80 w-full",
         !isMenuOpen && !isScrolled && "bg-transparent h-16 md:h-16",
-        !isMenuOpen && isScrolled && "bg-white/50 backdrop-blur-md shadow-sm h-16 sm:h-16 md:h-24"
+        !isMenuOpen && isScrolled && "bg-white/50 backdrop-blur-md shadow-sm h-16 sm:h-16 md:h-24 md:py-2"
       )}
     >
       <div className="container flex items-center justify-between px-4 sm:px-6 lg:px-8">
@@ -70,11 +70,12 @@ const Navbar = () => {
               scrollToTop();
             }}
           >
-            Início
+            Home
           </a>
-          <a href="#specifications" className="nav-link">Sobre</a>
-          <a href="#features" className="nav-link">Benefícios</a>
-          <a href="#details" className="nav-link">Contatos</a>
+          <a href="#specifications" className="nav-link">About Us</a>
+          <a href="#specifications" className="nav-link">Pricing</a>
+          <a href="#features" className="nav-link">Benefits</a>
+          <a href="#details" className="nav-link">Contacts</a>
         </nav>
 
         {/* Mobile menu button - increased touch target */}
@@ -103,7 +104,7 @@ const Navbar = () => {
               document.body.style.overflow = '';
             }}
           >
-            Início
+            Home
           </a>
           <a
             href="#specifications"
@@ -113,7 +114,17 @@ const Navbar = () => {
               document.body.style.overflow = '';
             }}
           >
-            Sobre
+            About Us
+          </a>
+          <a
+            href="#specifications"
+            className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-100"
+            onClick={() => {
+              setIsMenuOpen(false);
+              document.body.style.overflow = '';
+            }}
+          >
+            Pricing
           </a>
           <a
             href="#features"
@@ -123,7 +134,7 @@ const Navbar = () => {
               document.body.style.overflow = '';
             }}
           >
-            Benefícios
+            Benefits
           </a>
           <a
             href="#details"
@@ -133,7 +144,7 @@ const Navbar = () => {
               document.body.style.overflow = '';
             }}
           >
-            Contatos
+            Contacts
           </a>
         </nav>
       </div>

@@ -10,7 +10,7 @@ const SpecsSection = () => {
           <div className="flex items-center gap-4">
             <div className="pulse-chip">
               <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-pulse-500 text-white mr-2">3</span>
-              <span>Valores</span>
+              <span>Values</span>
             </div>
           </div>
           <div className="flex-1 h-[1px] bg-gray-300"></div>
@@ -25,8 +25,8 @@ const SpecsSection = () => {
                 backgroundImage: `url(${import.meta.env.BASE_URL}text-mask-image.jpg)`,
               }}
             >
-              A Zenit usa inteligência artificial para criar sites rápidos e personalizados, automatizando tarefas para
-              acelerar entregas e oferecendo suporte contínuo para garantir seu crescimento digital.
+              At Zenit, we leverage advanced AI tools to craft fast, customized websites and streamline 
+              processes, ensuring quicker delivery and reliable ongoing support for your digital growth.
             </span>
           </h2>
         </div>

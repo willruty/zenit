@@ -10,20 +10,20 @@ const HumanIntuitionSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="text-left">
             <div className="pulse-chip mb-4">
-              <span>Human-Like Intuition</span>
+              <span>How we work</span>
             </div>
-            <h2 className="section-title mb-6">Beyond algorithms to true understanding</h2>
+            <h2 className="section-title mb-6">From first call to a ready-to-launch website</h2>
             <p className="text-lg text-gray-700 mb-6">
-              Atlas goes beyond programmed responses to develop contextual awareness and
-              adaptive learning patterns that mirror human intuition. This enables natural
-              interactions that feel like working with a human colleague rather than a machine.
+              Our process is simple, transparent, and focused on results — guiding you step by step
+              until your website is 100% functional and ready to scale your business.
             </p>
             <ul className="space-y-4">
               {[
-                "Learns from human demonstrations and refines its approach over time",
-                "Anticipates needs based on situational awareness and past interactions",
-                "Adapts to changing environments without explicit reprogramming",
-                "Makes decisions with nuanced understanding of human preferences"
+                "Initial contact: we understand your needs and goals",
+                "Meeting: align expectations and define the strategy",
+                "Idea generation: creative proposals tailored to your business",
+                "Adjustments: refining details until everything is perfect",
+                "Launch: a fully functional website, fast and reliable"
               ].map((item, index) => (
                 <li key={index} className="flex items-start">
                   <div className="mr-3 text-pulse-500">
@@ -37,7 +37,6 @@ const HumanIntuitionSection = () => {
               ))}
             </ul>
           </div>
-          {/* Image container div has been removed */}
         </div>
       </div>
     </section>

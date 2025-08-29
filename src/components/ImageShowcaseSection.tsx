@@ -7,11 +7,11 @@ const ImageShowcaseSection = () => {
       <div className="container px-4 sm:px-6 lg:px-8 mx-auto">
         <div className="max-w-3xl mx-auto text-center mb-8 sm:mb-12 animate-on-scroll">
           <h2 className="text-3xl sm:text-4xl font-display font-bold tracking-tight text-gray-900 mb-3 sm:mb-4">
-            Transforme sua Presença Digital Hoje
+            Transform your digital presence today
           </h2>
           <p className="text-base sm:text-lg text-gray-600">
-            Nossa tecnologia de ponta usa inteligência artificial para criar sites que revolucionam a
-            forma como você se conecta com seus clientes, entregando inovação, velocidade e design inteligente.
+            Our cutting-edge technology harnesses artificial intelligence to build websites that revolutionize the way
+            you connect with your customers, delivering innovation, speed, and intelligent design.
           </p>
         </div>
 
@@ -24,10 +24,10 @@ const ImageShowcaseSection = () => {
             />
           </div>
           <div className="bg-white p-4 sm:p-8">
-            <h3 className="text-xl sm:text-2xl font-display font-semibold mb-3 sm:mb-4">Soluções Digitais de Nova Geração</h3>
+            <h3 className="text-xl sm:text-2xl font-display font-semibold mb-3 sm:mb-4">Next-Generation Digital Solutions</h3>
             <p className="text-gray-700 text-sm sm:text-base">
-              Desenvolvemos sites com precisão, usando IA avançada para garantir performance,
-              usabilidade e suporte contínuo, integrando tecnologia e criatividade para impulsionar seu negócio.
+              We develop websites with precision, powered by advanced AI to ensure performance, usability,
+              and continuous support blending technology, focusing on creativity to drive your business forward.
             </p>
           </div>
         </div>
