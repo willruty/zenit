@@ -7,10 +7,11 @@ import SpecsSection from "@/components/SpecsSection";
 import DetailsSection from "@/components/DetailsSection"; 
 import HumanIntuitionSection from "@/components/HumanIntuitionSection";
 import ImageShowcaseSection from "@/components/ImageShowcaseSection";
+import Princing from "@/components/Pricing";
 import Features from "@/components/Features";
-// import Testimonials from "@/components/Testimonials";
 import MadeByHumans from "@/components/MadeByHumans";
 import Footer from "@/components/Footer";
+import ContactSection from "@/components/ContactSection";
 
 const Index = () => {
   // Initialize intersection observer to detect when elements enter viewport
@@ -67,10 +68,9 @@ const Index = () => {
         <SpecsSection />
         <ImageShowcaseSection />
         <Features />
-        {/* <Testimonials /> */}
         <HumanIntuitionSection />
-        <DetailsSection />
-        <MadeByHumans />
+        <Princing />
+        <ContactSection />
       </main>
       <Footer />
     </div>
